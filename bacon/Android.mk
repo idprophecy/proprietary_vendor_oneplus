@@ -184,5 +184,25 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := QPerformance
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/framework/QPerformance.jar
+LOCAL_MODULE_SUFFIX := .jar
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqti_performance
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/lib/libqti_performance.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+include $(BUILD_PREBUILT)
+
 endif
 endif
