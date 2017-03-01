@@ -106,7 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/oneplus/bacon/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/oneplus/bacon/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/oneplus/bacon/proprietary/etc/permissions/com.qualcomm.qti.Performance.xml:/system/etc/permissions/com.qualcomm.qti.Performance.xml \
     vendor/oneplus/bacon/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
     vendor/oneplus/bacon/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/oneplus/bacon/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
@@ -213,7 +212,5 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     TimeService \
     shutdownlistener \
-    qcrilmsgtunnel \
-    QPerformance \
-    libqti_performance
+    qcrilmsgtunnel
 endif
